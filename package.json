@@ -2,10 +2,12 @@
   "name": "puviraj-portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "homepage": "https://puviraj7.github.io/Puviraj-Data_AI-Engineer",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "oxlint",
     "preview": "vite preview"
   },
