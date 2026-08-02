@@ -312,10 +312,10 @@ const LANGUAGES = [
 ];
 
 const RESUME_DOWNLOADS = [
-    { title: "Puviraj R - Full Resume (PDF)", file: "/Puviraj_R_Resume.pdf" },
-    { title: "Data Analyst Resume (PDF)", file: "/Puviraj_Data_Analyst_Resume.pdf" },
-    { title: "Data & AI Engineer Resume", file: "/Puviraj_R_Resume.pdf" },
-    { title: "Software Engineer Resume", file: "/Puviraj_R_Resume.pdf" }
+    { title: "Puviraj R - Full Resume (PDF)", file: "./Puviraj_R_Resume.pdf" },
+    { title: "Data Analyst Resume (PDF)", file: "./Puviraj_Data_Analyst_Resume.pdf" },
+    { title: "Data & AI Engineer Resume", file: "./Puviraj_R_Resume.pdf" },
+    { title: "Software Engineer Resume", file: "./Puviraj_R_Resume.pdf" }
 ];
 
 const SectionHeader = ({ title, subtitle, center = false }: { title: string; subtitle?: string; center?: boolean }) => (
@@ -575,7 +575,7 @@ const HeroSection = ({ openChat }: { openChat: () => void }) => {
                         <div className="absolute inset-0 glass-card rounded-3xl border border-white/20 p-2 transform transition-transform hover:-translate-y-2 duration-500 overflow-hidden">
                             <div className="w-full h-full bg-[#0F172A] rounded-2xl overflow-hidden relative group">
                                 <img 
-                                    src="/puviraj.jpg" 
+                                    src="./puviraj.jpg" 
                                     alt="Puviraj R - Profile Photo" 
                                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-700"
                                 />
@@ -1446,7 +1446,7 @@ const Footer = () => {
                         <div>
                             <h4 className="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Links & Resumes</h4>
                             <ul className="space-y-2 text-sm text-[#94A3B8]">
-                                <li><a href="/Puviraj_R_Resume.pdf" download className="hover:text-[#38BDF8] transition-colors flex items-center gap-1">Download Resume PDF <Download size={12}/></a></li>
+                                <li><a href="./Puviraj_R_Resume.pdf" download className="hover:text-[#38BDF8] transition-colors flex items-center gap-1">Download Resume PDF <Download size={12}/></a></li>
                                 <li><a href="https://github.com/puviraj7" target="_blank" rel="noreferrer" className="hover:text-[#38BDF8] transition-colors">GitHub Profile</a></li>
                                 <li><a href="https://linkedin.com/in/puviraj-r-8a648016b" target="_blank" rel="noreferrer" className="hover:text-[#38BDF8] transition-colors">LinkedIn Profile</a></li>
                                 <li><a href="#contact" className="hover:text-[#38BDF8] transition-colors">Book Call</a></li>
